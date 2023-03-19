@@ -1,6 +1,5 @@
-import Logo from "./icons/Logo"
+import AnnouncementBar from "./AnnouncementBar"
 import Header from "./Header"
-import MegaMenu from "./MegaMenu"
 import Footer from "./Footer"
 
-export { MegaMenu, Logo, Header, Footer }
+export { AnnouncementBar, Header, Footer }

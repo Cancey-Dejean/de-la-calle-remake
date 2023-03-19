@@ -9,19 +9,53 @@
   --cream: #fff0e0;
   --secondary: #000;
 }
+@font-face {
+  font-family: "ASM";
+  src: url("/fonts/ASM-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ASM";
+  src: url("/fonts/ASM-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Bravest";
+  src: url("/fonts/Bravest.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "El Grosa Display";
+  src: url("/fonts/ElGrosa-Display.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "El Grosa Round";
+  src: url("../public/fonts/ElGrosa-Round.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
 
 @layer base {
   * {
-    @apply m-0 box-border scroll-smooth p-0 antialiased;
+    @apply m-0 box-border scroll-smooth border border-none p-0 antialiased;
   }
 
   html,
   body {
-    @apply h-full bg-[color:var(--cream)];
+    @apply h-full;
   }
 
   body {
-    @apply flex flex-col font-body text-[18px];
+    @apply flex flex-col  font-body;
   }
 
   audio,
@@ -38,7 +72,7 @@
   }
 
   a {
-    @apply inline-block text-[inherit];
+    @apply inline-block cursor-custom text-[inherit];
   }
 
   p {
@@ -75,7 +109,7 @@
   }
 
   .has-dropdown .mega-menu .menu-title {
-    @apply bg-color-primary py-[.91rem] px-[1rem] uppercase text-white;
+    @apply text-white bg-color-primary py-[.91rem] px-[1rem] uppercase;
   }
 
   .has-dropdown .mega-menu ul {

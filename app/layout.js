@@ -1,5 +1,5 @@
 // import { Navbar, Footer,  } from "../components"
-import { Header } from "./components"
+import { Footer, Header } from "./components"
 import "./globals.css"
 
 export default function RootLayout({ children }) {
@@ -15,6 +15,7 @@ export default function RootLayout({ children }) {
         <Header />
         <main id="main">{children}</main>
         {/* <Footer /> */}
+        <Footer />
       </body>
     </html>
   )
