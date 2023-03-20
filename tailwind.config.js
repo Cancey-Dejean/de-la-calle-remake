@@ -15,6 +15,7 @@ module.exports = {
       "color-cream": "var(--cream)",
       "color-white": "var(--white)",
       "color-black": "var(--black)",
+      "color-yellow": "var(--yellow)",
       transparent: "transparent",
     },
     fontFamily: {
@@ -30,7 +31,9 @@ module.exports = {
     cursor: {
       custom: "url(/images/cursor-image-small.png), pointer",
     },
-    maxWidth: {},
+    maxWidth: {
+      container: "1440px",
+    },
     blur: {},
     backgroundImage: {},
     boxShadow: {

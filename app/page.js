@@ -1,11 +1,9 @@
-import { Footer, Header } from "./components"
+import { Footer, Header, Hero } from "./components"
 
 export default function Home() {
   return (
     <>
-      <main>
-        <h1 className="font-bold">Homepage</h1>
-      </main>
+      <Hero />
     </>
   )
 }

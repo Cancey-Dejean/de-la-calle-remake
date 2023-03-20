@@ -9,6 +9,7 @@
   --cream: #fff0e0;
   --black: #000;
   --white: #fff;
+  --yellow: #ffdd00;
 }
 @font-face {
   font-family: "ASM";
@@ -74,6 +75,18 @@
 
   a {
     @apply inline-block cursor-custom text-[inherit];
+  }
+
+  .btn {
+    @apply bg-color-primary py-[.7em] px-[2.6em] text-center font-body text-[20px] font-bold uppercase leading-[1] text-color-white transition-links;
+  }
+
+  .btn.yellow {
+    @apply bg-color-yellow hover:bg-color-primary;
+  }
+
+  .container {
+    @apply w-full max-w-container px-[65px];
   }
 
   p {

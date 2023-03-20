@@ -1,10 +1,10 @@
 import Link from "next/link"
 
-const Button = () => {
+const Button = ({ link, text, btnColor }) => {
   return (
     <>
-      <Link href="" className="">
-        Button Default
+      <Link href={link} className={`btn ${btnColor ? btnColor : ""}`}>
+        {text}
       </Link>
     </>
   )
