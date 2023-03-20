@@ -11,10 +11,10 @@ module.exports = {
   ],
   theme: {
     colors: {
-      "color-primary": "#f9423a",
-      "color-cream": "#fff0e0",
-      "color-white": "#ffffff",
-      "color-black": "#000000",
+      "color-primary": "var(--primary)",
+      "color-cream": "var(--cream)",
+      "color-white": "var(--white)",
+      "color-black": "var(--black)",
       transparent: "transparent",
     },
     fontFamily: {
