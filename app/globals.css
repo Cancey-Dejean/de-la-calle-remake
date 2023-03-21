@@ -46,6 +46,13 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Oaxaca";
+  src: url("/fonts/OaxacaRegular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
 @layer base {
   * {
     @apply m-0 box-border scroll-smooth border border-none p-0 antialiased;
@@ -57,7 +64,7 @@
   }
 
   body {
-    @apply flex flex-col  bg-color-cream font-body;
+    @apply flex flex-col  overflow-x-hidden bg-color-cream font-body;
   }
 
   audio,
@@ -105,7 +112,60 @@
   .block-link {
     @apply relative [&_a]:after:absolute [&_a]:after:left-0 [&_a]:after:top-0 [&_a]:after:right-0 [&_a]:after:bottom-0 [&_a]:after:z-[3] [&_a]:after:h-full [&_a]:after:w-full [&_a]:after:content-[""];
   }
+
+  .marquee {
+    background-color: var(--cream);
+    color: var(--primary);
+    transform: perspective(1px) rotate(-2deg);
+    position: absolute;
+    bottom: 100%;
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+  }
+
+  .marquee::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 150%;
+    height: 100%;
+    border-top: 2px solid var(--cream);
+    background-color: var(--cream);
+    border-bottom: 2px solid var(--primary);
+    z-index: -1;
+  }
+
+  .marquee::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, 0);
+    width: 150%;
+    height: 150%;
+  }
+
+  .marquee-item {
+    display: flex;
+    align-items: center;
+    flex: 1 0 auto;
+    animation: text-marquee 55s linear infinite;
+    animation-duration: 45s;
+  }
+
+  .marquee-item span {
+    @apply flex flex-[1_0_auto] items-center justify-center whitespace-nowrap border-l-2 border-solid border-color-primary px-[27px] py-[45px] font-marquee text-[40px] leading-[1.1];
+  }
 }
 
 @layer utilities {
+  @keyframes text-marquee {
+    100% {
+      -webkit-transform: translateX(-100%);
+      transform: translateX(-100%);
+    }
+  }
 }

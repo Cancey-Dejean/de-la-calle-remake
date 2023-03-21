@@ -9,10 +9,12 @@ const HeroTitle = ({ children }) => {
 
 const Hero = () => {
   return (
-    <section className="bg-hero-home relative flex h-[95vh] max-h-[1080px] min-h-[800px] items-center justify-start overflow-hidden bg-color-primary text-color-cream">
+    <section className="bg-hero-home relative flex h-[95vh] max-h-[1080px] min-h-[800px] items-center justify-start  bg-color-primary text-color-cream">
       <Image
         src={images.Hero1}
         className="absolute h-full w-full object-cover"
+        alt="hero image"
+        priority
       />
       <div className="container flex  -rotate-[2deg] flex-col items-start">
         <div className="flex flex-col gap-[40px] text-center">
