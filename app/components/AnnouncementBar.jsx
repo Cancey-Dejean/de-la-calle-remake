@@ -1,14 +1,11 @@
 import Link from "next/link"
 import React from "react"
 
-const AnnouncementBar = () => {
+const AnnouncementBar = ({ text }) => {
   return (
-    <div className="border border-b-transparent bg-color-primary  text-center ">
-      <Link
-        href="/"
-        className="block py-[7px] text-color-white hover:underline"
-      >
-        SHOP OUR THREE EXCLUSIVE NEW FLAVORS AT TARGET NATIONWIDE!
+    <div className="announcement__bar">
+      <Link href="/" className="announcement__bar--link">
+        {text}
       </Link>
     </div>
   )

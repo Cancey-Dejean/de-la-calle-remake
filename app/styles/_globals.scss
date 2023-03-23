@@ -1,0 +1,154 @@
+:root {
+    --color-primary: #f9423a;
+    --color-cream: #fff0e0;
+    --color-black: #000;
+    --color-white: #fff;
+    --color-yellow: #ffdd00;
+
+
+    --font-body: "ASM", "Arial", "Helvetica", sans-serif;
+    --font-link: "El Grosa Round", "Arial", "Helvetica", sans-serif;
+    --font-heading: "El Grosa Display", "Arial", "Helvetica", sans-serif;
+    --font-title: "Bravest", "Arial", "Helvetica", sans-serif;
+    --font-marquee: "Oaxaca", "Arial", "Helvetica", sans-serif;
+}
+
+@font-face {
+    font-family: "ASM";
+    src: url("/fonts/ASM-Regular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ASM";
+    src: url("/fonts/ASM-Bold.woff2") format("woff2");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Bravest";
+    src: url("/fonts/Bravest.woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "El Grosa Display";
+    src: url("/fonts/ElGrosa-Display.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "El Grosa Round";
+    src: url("/fonts/ElGrosa-Round.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Oaxaca";
+    src: url("/fonts/OaxacaRegular.woff2") format("woff2");
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    @apply m-0 box-border scroll-smooth border border-none p-0 antialiased;
+}
+
+html,
+body {
+    @apply h-full;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: var(--cream);
+    font-family: var(--font-title);
+    font-size: 17px;
+}
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+a,
+button,
+[role="button"],
+input,
+label,
+select,
+textarea {
+    touch-action: manipulation;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+    cursor: url(/images/cursor-image-small.png), pointer;
+}
+
+.container-wide {
+    margin-inline: auto;
+    max-width: 1584px;
+    width: 100%;
+    padding: 0 40px;
+}
+
+.container {
+    padding: 0 65px;
+    max-width: 1440px;
+    width: 100%;
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-weight: 400;
+    text-align: center;
+    font-size: clamp(32px, 5.7vw, 90px);
+    margin-bottom: clamp(40px, 4.5vw, 68px);
+    transform: rotate(-2deg);
+    color: var(--color-primary);
+}
+
+/* Block Link */
+.block-link {
+    // @apply relative [&_a]: after:absolute [&_a]:after:left-0 [&_a]:after:top-0 [&_a]:after:right-0 [&_a]:after:bottom-0 [&_a]:after:z-[3] [&_a]:after:h-full [&_a]:after:w-full [&_a]:after:content-[""];
+    position: relative;
+
+}
+
+/* Block Link */
+@keyframes text-marquee {
+    100% {
+        -webkit-transform: translateX(-100%);
+        transform: translateX(-100%);
+    }
+}
+
+/* Home Flavors */
+.home-flavors {}
+
+/* End of Home Flavors*/

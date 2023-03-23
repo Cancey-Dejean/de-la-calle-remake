@@ -1,0 +1,16 @@
+.announcement__bar {
+    border-bottom: 1px solid transparent;
+    background-color: var(--color-primary);
+    text-align: center;
+    font-family: var(--font-body);
+
+    &--link {
+        display: block;
+        padding: 7px 0px;
+        color: var(--color-white);
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

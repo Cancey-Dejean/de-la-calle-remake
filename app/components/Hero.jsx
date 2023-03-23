@@ -9,29 +9,28 @@ const HeroTitle = ({ children }) => {
 
 const Hero = () => {
   return (
-    <section className="bg-hero-home relative flex h-[95vh] max-h-[1080px] min-h-[800px] items-center justify-start  bg-color-primary text-color-cream">
+    <section className="hero">
       <Image
         src={images.Hero1}
-        className="absolute h-full w-full object-cover"
+        className="hero__bg"
         alt="hero image"
         priority
       />
-      <div className="container flex  -rotate-[2deg] flex-col items-start">
-        <div className="flex flex-col gap-[40px] text-center">
-          <HeroTitle>
-            <span className="text-[90px]">
-              Taste the
-              <br />
-              Tepache
-              <br />
-              Tropics
-            </span>
-            only at target
-          </HeroTitle>
 
-          <div>
-            <Button link="/" text="shop now" btnColor="yellow" />
-          </div>
+      <div className="hero__container container">
+        <HeroTitle>
+          <span className="text-[90px]">
+            Taste the
+            <br />
+            Tepache
+            <br />
+            Tropics
+          </span>
+          only at target
+        </HeroTitle>
+
+        <div>
+          <Button link="/" text="shop now" btnColor="yellow" />
         </div>
       </div>
     </section>

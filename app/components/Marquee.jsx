@@ -1,8 +1,64 @@
-const Marquee = () => {
+const Marquee = ({ bgColor, textColor }) => {
   return (
-    <div className="relative">
-      <div className="marquee">
-        <div className="marquee-item">
+    <div
+      className="marquee"
+      style={{
+        backgroundColor: bgColor,
+      }}
+    >
+      <p
+        className="marquee-item"
+        style={{
+          color: textColor,
+        }}
+      >
+        It’s about celebrating all life has to offer. It’s about discovering
+        authentic flavors both traditional and modern.
+      </p>
+
+      <p
+        className="marquee-item"
+        style={{
+          color: textColor,
+        }}
+      >
+        It’s about celebrating all life has to offer. It’s about discovering
+        authentic flavors both traditional and modern.
+      </p>
+
+      <p
+        className="marquee-item"
+        style={{
+          color: textColor,
+        }}
+      >
+        It’s about celebrating all life has to offer. It’s about discovering
+        authentic flavors both traditional and modern.
+      </p>
+
+      <p
+        className="marquee-item"
+        style={{
+          color: textColor,
+        }}
+      >
+        It’s about celebrating all life has to offer. It’s about discovering
+        authentic flavors both traditional and modern.
+      </p>
+    </div>
+  )
+}
+
+const MarqueeBig = ({ bgColor, textColor }) => {
+  return (
+    <>
+      <div className="product-marquee marquee-section">
+        <div
+          className="marquee-section__list"
+          style={{
+            animationDuration: "45s",
+          }}
+        >
           <span>CERTIFIED ORGANIC</span>
 
           <span> LOW IN SUGAR</span>
@@ -11,8 +67,12 @@ const Marquee = () => {
 
           <span> FERMENTED</span>
         </div>
-
-        <div className="marquee-item">
+        <div
+          className="marquee-section__list"
+          style={{
+            animationDuration: "45s",
+          }}
+        >
           <span>CERTIFIED ORGANIC</span>
 
           <span> LOW IN SUGAR</span>
@@ -21,8 +81,12 @@ const Marquee = () => {
 
           <span> FERMENTED</span>
         </div>
-
-        <div className="marquee-item">
+        <div
+          className="marquee-section__list"
+          style={{
+            animationDuration: "45s",
+          }}
+        >
           <span>CERTIFIED ORGANIC</span>
 
           <span> LOW IN SUGAR</span>
@@ -32,8 +96,8 @@ const Marquee = () => {
           <span> FERMENTED</span>
         </div>
       </div>
-    </div>
+    </>
   )
 }
 
-export default Marquee
+export { Marquee, MarqueeBig }

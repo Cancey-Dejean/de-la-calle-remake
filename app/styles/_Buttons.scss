@@ -1,0 +1,25 @@
+.btn {
+    background-color: var(--color-primary);
+    padding-top: .7em;
+    padding-bottom: .7em;
+    padding-left: 2.6em;
+    padding-right: 2.6em;
+    text-align: center;
+    font-family: ASM, Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1;
+    color: var(--white);
+    transition-property: all 0.3s ease-in-out;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 150ms;
+}
+
+.btn.yellow {
+    background-color: var(--color-yellow);
+
+    &:hover {
+        background-color: var(--color-primary);
+    }
+}

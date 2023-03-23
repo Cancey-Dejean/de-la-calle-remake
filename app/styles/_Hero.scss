@@ -1,0 +1,26 @@
+.hero {
+    position: relative;
+    height: 95vh;
+    max-height: 1080px;
+    min-height: 800px;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--color-primary);
+    color: var(--color-cream);
+
+    &__bg {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        transform: perspective(1px) rotate(-2deg);
+        gap: 40px;
+        text-align: center;
+    }
+}

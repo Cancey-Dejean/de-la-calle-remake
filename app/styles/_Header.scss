@@ -1,0 +1,21 @@
+.header {
+    background: var(--color-cream);
+    border-bottom: 2px solid var(--color-primary);
+    font-family: var(--font-heading);
+    position: relative;
+
+    a {
+        color: var(--color-primary);
+    }
+
+    .container-wide {
+        padding: 0 40px;
+    }
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+}
