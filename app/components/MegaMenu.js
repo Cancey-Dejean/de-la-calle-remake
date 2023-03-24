@@ -5,7 +5,7 @@ const MegaMenu = () => {
     <nav className="mega__menu--nav" role="navigation">
       <ul className="mega__menu">
         <li className="mega__menu--item">
-          <a href="/collections/frontpage" className="mega__menu--link">
+          <Link href="/collections/frontpage" className="mega__menu--link">
             <span className="mega__menu--text">Shop</span>
             <span className="mega__menu--icon-wrapper">
               <svg
@@ -22,7 +22,7 @@ const MegaMenu = () => {
                 ></path>
               </svg>
             </span>
-          </a>
+          </Link>
 
           <ul className="mega__menu--submenu">
             {/* 2 Columns*/}
@@ -58,7 +58,7 @@ const MegaMenu = () => {
 
               <ul className="mega__menu--submenu-items two-columns">
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -68,11 +68,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>GRAPEFRUIT LIME</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -82,11 +82,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>MANGO CHILI</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -96,11 +96,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>WATERMELON JALAPENO</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -110,11 +110,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>GINGER MANZANA</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -124,11 +124,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>CACTUS PRICKLY PEAR</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -138,11 +138,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>TAMARIND CITRUS</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -152,11 +152,11 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>CHAMOY</span>
-                  </a>
+                  </Link>
                 </li>
 
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/paloma-grapefruit-lime"
                     className="mega__menu--submenu-link"
                   >
@@ -166,7 +166,7 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>ORANGE TURMERIC</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -177,7 +177,7 @@ const MegaMenu = () => {
               <span className="mega__menu--col-title">SHOP MULTI-PACK</span>
               <ul className="mega__menu--submenu-items">
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/variety-pack"
                     className="mega__menu--submenu-link"
                   >
@@ -187,10 +187,10 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>ORIGINALES</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/nueva-variety-pack"
                     className="mega__menu--submenu-link"
                   >
@@ -200,10 +200,10 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>NUEVA</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/mixta-variety-pack"
                     className="mega__menu--submenu-link"
                   >
@@ -213,28 +213,28 @@ const MegaMenu = () => {
                       role="presentation"
                     />
                     <span>MIXTA</span>
-                  </a>
+                  </Link>
                 </li>
                 <li className="mega__menu--submenu-item is-empty">
-                  <a href="#" className="mega__menu--submenu-link">
+                  <Link href="#" className="mega__menu--submenu-link">
                     <img
                       src="//cdn.shopify.com/s/files/1/0508/9181/7109/files/Asset_2_56afe016-2bb3-4090-9c4f-403ca237ef07_60x.png?v=1662470872"
                       alt="MIXTA"
                       role="presentation"
                     />
                     <span>Empty link</span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             {/* End of Single Column */}
 
             {/*  Highlight  Block */}
-            <li className="mega__menu--col is-large">
+            <li className="mega__menu--col is-large highlight-block">
               <span className="mega__menu--col-title">MERCH COMING SOON!</span>
               <ul className="mega__menu--submenu-items">
                 <li className="mega__menu--submenu-item">
-                  <a
+                  <Link
                     href="/products/mixta-variety-pack"
                     className="mega__menu--submenu-link"
                   >
@@ -242,10 +242,10 @@ const MegaMenu = () => {
                       src="//cdn.shopify.com/s/files/1/0508/9181/7109/files/menu-item-large-image_300x.png?v=1662470907"
                       alt="Shop merch now!"
                     />
-                    <span className="title-grosa title-grosa--xxxs">
+                    <span className="highlight__block--title">
                       Shop <br /> merch <br /> soon!
                     </span>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -253,9 +253,9 @@ const MegaMenu = () => {
           </ul>
         </li>
 
-        {/* <li className="mega__menu__item">
-          <a href="/pages/about" className="mega__menu--link">
-            <span>About</span>
+        <li className="mega__menu--item">
+          <Link href="/collections/frontpage" className="mega__menu--link">
+            <span className="mega__menu--text">About</span>
             <span className="mega__menu--icon-wrapper">
               <svg
                 className="mega__menu--icon"
@@ -271,11 +271,14 @@ const MegaMenu = () => {
                 ></path>
               </svg>
             </span>
-          </a>
-          <ul className="mega-sub-menu mega-sub-menu--cards">
+          </Link>
+
+          <ul className="mega__menu--submenu mega__menu--cards triple-cols">
+            {/* 3 Columns*/}
             <li className="mega__menu--col">
-              <span>ABOUT DE LA CALLE</span>
-              <button className="btn-close-submenu">
+              <span className="mega__menu--col-title">ABOUT DE LA CALLE</span>
+
+              {/* <button className="btn-close-submenu">
                 <svg
                   width="39"
                   height="39"
@@ -300,10 +303,11 @@ const MegaMenu = () => {
                     strokeWidth="2"
                   ></line>
                 </svg>
-              </button>
-              <ul className="mega__menu--submenu-items">
-                <li className="mega__menu--submenu-item mega__menu--submenu-item--card">
-                  <a href="/pages/about" className="mega__menu--submenu-link">
+              </button> */}
+
+              <ul className="mega__menu--submenu-items three-columns">
+                <li className="mega__menu--submenu-item mega__menu--submenu--card">
+                  <Link href="/pages/about" className="mega-sub-menu__link">
                     <img
                       src="//cdn.shopify.com/s/files/1/0508/9181/7109/files/Group_13211_400x.jpg?v=1662542674"
                       alt="About DE LA CALLE"
@@ -311,10 +315,10 @@ const MegaMenu = () => {
                     />
                     <h3>About DE LA CALLE</h3>
                     <p>WATCH THE BRAND FILM!</p>
-                  </a>
+                  </Link>
                 </li>
-                <li className="mega__menu--submenu-item mega__menu--submenu-item--card">
-                  <a href="/pages/history" className="mega__menu--submenu-link">
+                <li className="mega__menu--submenu-item mega__menu--submenu--card">
+                  <Link href="/pages/about" className="mega-sub-menu__link">
                     <img
                       src="//cdn.shopify.com/s/files/1/0508/9181/7109/files/Mask_group_400x.jpg?v=1662542685"
                       alt="HISTORY OF TEPACHE"
@@ -322,10 +326,10 @@ const MegaMenu = () => {
                     />
                     <h3>HISTORY OF TEPACHE</h3>
                     <p>WHAT IS TEPACHE ANYWAY?</p>
-                  </a>
+                  </Link>
                 </li>
-                <li className="mega__menu--submenu-item mega__menu--submenu-item--card">
-                  <a href="/blogs/news" className="mega__menu--submenu-link">
+                <li className="mega__menu--submenu-item mega__menu--submenu--card">
+                  <Link href="/pages/about" className="mega-sub-menu__link">
                     <img
                       src="//cdn.shopify.com/s/files/1/0508/9181/7109/files/Group_13212_400x.jpg?v=1662542692"
                       alt="BLOG"
@@ -333,24 +337,19 @@ const MegaMenu = () => {
                     />
                     <h3>BLOG</h3>
                     <p>RECIPES, NEWS AND MORE!</p>
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
+            {/*  End of 3 Columns */}
           </ul>
-        </li> */}
+        </li>
 
-        {/* <li className="mega__menu__item">
-          <a href="/pages/subscription" className="mega__menu--link">
+        <li className="mega__menu__item">
+          <Link href="/pages/subscription" className="mega__menu--link">
             Subscription
-          </a>
-        </li> */}
-
-        {/* <li className="mega__menu__item mega__menu__item--account">
-          <a href="/account/login" className="mega__menu--link">
-            Sign in
-          </a>
-        </li> */}
+          </Link>
+        </li>
       </ul>
     </nav>
   )

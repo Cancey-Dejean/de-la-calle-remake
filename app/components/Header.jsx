@@ -22,12 +22,12 @@ const Header = () => {
 
           <div className="icons">
             <nav>
-              <ul className="flex items-center gap-8">
-                <li className="flex">
+              <ul className="">
+                <li className="">
                   <Link href="#">
                     <Cocteles
-                      fillColor="var(--primary)"
-                      textColor="var(--cream)"
+                      fillColor="var(--color-primary)"
+                      textColor="var(--color-cream)"
                     />
                   </Link>
                 </li>
@@ -35,15 +35,10 @@ const Header = () => {
                   <Link href="#">Sign in</Link>
                 </li>
                 <li>
-                  <Link href="#" className="flex">
+                  <Link href="#" className="">
                     <img src="/images/umbrella.svg" alt="" />
 
-                    <span
-                      className="flex h-[28px] 
-                  w-[28px] items-center justify-center rounded-full border-2 border-solid border-color-primary text-[12px]"
-                    >
-                      0
-                    </span>
+                    <span className="">0</span>
                   </Link>
                 </li>
               </ul>

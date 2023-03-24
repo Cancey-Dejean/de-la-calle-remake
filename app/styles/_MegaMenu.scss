@@ -60,9 +60,27 @@
             transform: rotate(45deg);
         }
 
+        &.triple-cols::before {
+            left: 8rem;
+        }
+
+        &.mega__menu--cards {
+            width: 71vw;
+            max-width: 1136px;
+            left: -90%;
+
+            .mega__menu--col {
+                flex-grow: 1;
+            }
+        }
+
         .mega__menu--col {
             display: flex;
             flex-direction: column;
+
+            &:last-of-type .mega__menu--submenu-items {
+                border-right: 0;
+            }
 
             &-title {
                 display: block;
@@ -74,7 +92,74 @@
                 padding: 0.91rem 1rem;
                 white-space: nowrap;
             }
+
+            &.is-large {
+                flex: 1;
+
+                .mega__menu--submenu-item {
+                    display: flex;
+                    width: auto;
+                    max-width: 100%;
+
+                    img {
+                        width: 60%;
+                        max-width: 100%;
+                    }
+
+                    .highlight__block--title {
+                        line-height: 1.1;
+                        text-transform: uppercase;
+                        font-size: 40px;
+                        font-family: var(--font-heading);
+                        text-align: center;
+                        transform: rotate(-3deg);
+                    }
+                }
+            }
+
+            .three-columns {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+
+
+
+                .mega__menu--submenu--card {
+                    max-width: 100%;
+                    width: 100%;
+                    display: block;
+                    padding: 1.84rem;
+
+                    &:nth-child(1),
+                    &:nth-child(2) {
+                        border-right: 2px solid var(--color-primary);
+                        border-bottom: 0;
+                    }
+
+                    .mega-sub-menu__link {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+
+                        img {
+                            margin: 0 0 0.8rem 0;
+                        }
+
+                        h3 {
+                            font-size: 30px;
+                            text-transform: uppercase;
+                        }
+
+                        p {
+                            text-transform: uppercase;
+                            color: currentColor;
+                            font-size: 16px;
+                            font-family: var(--font-body);
+                        }
+                    }
+                }
+            }
         }
+
 
         // &::after {
         //     content: "";
@@ -119,6 +204,10 @@
                 font-size: 18px;
                 font-weight: 400;
 
+                span {
+                    flex: 1;
+                }
+
                 img {
                     width: 56px;
                     margin-right: 12px;
@@ -145,6 +234,4 @@
 
 
     }
-
-
 }
