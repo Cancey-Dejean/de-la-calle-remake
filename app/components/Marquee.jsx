@@ -1,17 +1,7 @@
 const Marquee = ({ bgColor, textColor }) => {
   return (
-    <div
-      className="marquee"
-      style={{
-        backgroundColor: bgColor,
-      }}
-    >
-      <p
-        className="marquee-item"
-        style={{
-          color: textColor,
-        }}
-      >
+    <div className="marquee">
+      <p className="marquee-item">
         It’s about celebrating all life has to offer. It’s about discovering
         authentic flavors both traditional and modern.
       </p>
@@ -53,12 +43,7 @@ const MarqueeBig = ({ bgColor, textColor }) => {
   return (
     <>
       <div className="product-marquee marquee-section">
-        <div
-          className="marquee-section__list"
-          style={{
-            animationDuration: "45s",
-          }}
-        >
+        <div className="marquee-section__list">
           <span>CERTIFIED ORGANIC</span>
 
           <span> LOW IN SUGAR</span>
@@ -67,12 +52,7 @@ const MarqueeBig = ({ bgColor, textColor }) => {
 
           <span> FERMENTED</span>
         </div>
-        <div
-          className="marquee-section__list"
-          style={{
-            animationDuration: "45s",
-          }}
-        >
+        <div className="marquee-section__list">
           <span>CERTIFIED ORGANIC</span>
 
           <span> LOW IN SUGAR</span>
@@ -81,12 +61,7 @@ const MarqueeBig = ({ bgColor, textColor }) => {
 
           <span> FERMENTED</span>
         </div>
-        <div
-          className="marquee-section__list"
-          style={{
-            animationDuration: "45s",
-          }}
-        >
+        <div className="marquee-section__list">
           <span>CERTIFIED ORGANIC</span>
 
           <span> LOW IN SUGAR</span>

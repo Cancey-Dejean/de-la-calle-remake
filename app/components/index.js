@@ -4,6 +4,7 @@ import Hero from "./Hero"
 import HomeFlavors from "./HomeFlavors"
 import MegaMenu from "./MegaMenu"
 import { Marquee, MarqueeBig } from "./Marquee"
+import { SwiperCarousel } from "./Sliders"
 import Footer from "./Footer"
 
 export {
@@ -15,4 +16,5 @@ export {
   Footer,
   Marquee,
   MarqueeBig,
+  SwiperCarousel,
 }

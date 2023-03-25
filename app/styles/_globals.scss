@@ -67,7 +67,7 @@ body {
 body {
     display: flex;
     flex-direction: column;
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: var(--cream);
     font-family: var(--font-title);
     font-size: 17px;
@@ -110,6 +110,16 @@ a {
     cursor: url(/images/cursor-image-small.png), pointer;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    line-height: 1.1;
+}
+
 .container-wide {
     margin-inline: auto;
     max-width: 1584px;
@@ -147,8 +157,3 @@ a {
         transform: translateX(-100%);
     }
 }
-
-/* Home Flavors */
-.home-flavors {}
-
-/* End of Home Flavors*/
