@@ -7,58 +7,57 @@ const HomeFlavors = () => {
 
       <h2 className="section-title">SHOP FLAVORS</h2>
 
-      <div>
-        <h1>Slick Section</h1>
+      <SwiperCarousel>
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+1"
+          alt="Slide 1"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+2"
+          alt="Slide 2"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+3"
+          alt="Slide 3"
+        />
 
-        <SwiperCarousel>
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+1"
-            alt="Slide 1"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+2"
-            alt="Slide 2"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+3"
-            alt="Slide 3"
-          />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+1"
+          alt="Slide 4"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+2"
+          alt="Slide 5"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+3"
+          alt="Slide 6"
+        />
 
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+1"
-            alt="Slide 4"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+2"
-            alt="Slide 5"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+3"
-            alt="Slide 6"
-          />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+1"
+          alt="Slide 7"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+2"
+          alt="Slide 8"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+3"
+          alt="Slide 9"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+2"
+          alt="Slide 10"
+        />
+        <img
+          src="https://via.placeholder.com/800x300?text=Slide+3"
+          alt="Slide 11"
+        />
+      </SwiperCarousel>
 
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+1"
-            alt="Slide 7"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+2"
-            alt="Slide 8"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+3"
-            alt="Slide 9"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+2"
-            alt="Slide 10"
-          />
-          <img
-            src="https://via.placeholder.com/800x300?text=Slide+3"
-            alt="Slide 11"
-          />
-        </SwiperCarousel>
-      </div>
+      <br />
+      <br />
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod obcaecati
         aliquam esse eligendi recusandae eos reprehenderit illo necessitatibus

@@ -17,6 +17,24 @@ const SwiperCarousel = ({ children, settings }) => {
     loop: true,
     pagination: false,
     autoplay: { delay: 5000 },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+      },
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 40,
+      },
+    },
   }
 
   const swiperSettings = settings
