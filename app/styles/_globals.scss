@@ -103,6 +103,7 @@ ul {
     padding: 0;
 }
 
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -144,10 +145,18 @@ h6 {
 }
 
 /* Block Link */
-.block-link {
-    // @apply relative [&_a]: after:absolute [&_a]:after:left-0 [&_a]:after:top-0 [&_a]:after:right-0 [&_a]:after:bottom-0 [&_a]:after:z-[3] [&_a]:after:h-full [&_a]:after:w-full [&_a]:after:content-[""];
+.access-link {
     position: relative;
 
+    a::after {
+        content: " ";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 3;
+    }
 }
 
 /* Block Link */

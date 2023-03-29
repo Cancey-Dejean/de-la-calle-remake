@@ -12,12 +12,13 @@
 
 .home-flavors .product-marquee:before {
     background-color: var(--cream);
+    border-top: 2px solid var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
 }
 
-// .home-flavors .product-marquee:after {
-//     background-color: var(--color-cream);
-// }
+.home-flavors .product-marquee::after {
+    background-color: var(--color-cream);
+}
 
 .product-marquee {
     // color: var(--color-cream);
@@ -65,10 +66,10 @@
     }
 }
 
-// .product-marquee span:nth-child(odd) {
-//     font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1440 - 320)));
-//     padding-top: 52px;
-// }
+.product-marquee span:nth-child(odd) {
+    font-size: calc(18px + (32 - 18) * ((100vw - 320px) / (1440 - 320)));
+    padding-top: 52px;
+}
 
 @media all and (min-width: 1441px) {
     .product-marquee span:nth-child(odd) {
@@ -96,7 +97,7 @@
 .marquee-section,
 .marquee-section__list {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     flex: 1 0 auto;
 }
 

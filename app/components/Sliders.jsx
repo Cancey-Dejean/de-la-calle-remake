@@ -9,18 +9,15 @@ SwiperCore.use([Navigation, Pagination, Autoplay])
 
 const SwiperCarousel = ({ children, settings }) => {
   const defaultSettings = {
-    spaceBetween: 30,
-    slidesPerView: 4,
     slidesPerGroup: 1,
     centeredSlides: true,
     navigation: false,
     loop: true,
     pagination: false,
-    autoplay: { delay: 5000 },
+    // autoplay: { delay: 5000 },
     breakpoints: {
       320: {
         slidesPerView: 1,
-        spaceBetween: 10,
       },
       480: {
         slidesPerView: 2,
@@ -28,7 +25,6 @@ const SwiperCarousel = ({ children, settings }) => {
       },
       640: {
         slidesPerView: 3,
-        spaceBetween: 30,
       },
       1024: {
         slidesPerView: 4,

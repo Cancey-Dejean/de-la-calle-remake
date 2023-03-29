@@ -6,10 +6,6 @@
     top: 0;
     z-index: 100;
 
-    a {
-        color: var(--color-primary);
-    }
-
     .container-wide {
         padding: 0 40px;
     }
@@ -20,6 +16,10 @@
         justify-content: space-between;
         gap: 10px;
         position: relative;
+
+        a {
+            color: var(--color-primary);
+        }
     }
 
     &__logo {

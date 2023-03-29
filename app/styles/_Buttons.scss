@@ -5,7 +5,7 @@
     padding-left: 2.6em;
     padding-right: 2.6em;
     text-align: center;
-    font-family: ASM, Arial, Helvetica, sans-serif;
+    font-family: var(--font-body);
     font-size: 20px;
     font-weight: 700;
     text-transform: uppercase;
@@ -14,12 +14,28 @@
     transition-property: all 0.3s ease-in-out;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     transition-duration: 150ms;
+    white-space: nowrap;
+
+
+    &__small {
+        height: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &--border {
+            background-color: transparent;
+            border: 2px solid var(--color-primary);
+        }
+    }
 }
 
-.btn.yellow {
-    background-color: var(--color-yellow);
+button.btn {
+    width: 100%;
+}
 
-    &:hover {
-        background-color: var(--color-primary);
-    }
+.btn__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
