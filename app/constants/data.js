@@ -15,6 +15,25 @@ const marqueeAbout = [
   },
 ]
 
+const shopFlavors = [
+  {
+    id: "1",
+    link: "/orange-tumeric",
+    img: images.OrangeTumeric,
+    color: "var(--color-primary)",
+    headTItle: "NEW FLAVOR!",
+    headBgColor: "var(--color-yellow)",
+    title: " ORANGE TURMERIC",
+    reviewNumber: 13,
+    description: [
+      "A Citrusy Twist\n",
+      "Complex and Earthy\n",
+      "Perfect Over Ice",
+    ],
+  },
+]
+
 export default {
   marqueeAbout,
+  shopFlavors,
 }

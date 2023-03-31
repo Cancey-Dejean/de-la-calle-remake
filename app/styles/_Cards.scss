@@ -1,4 +1,42 @@
 .card {
+    &__header {
+        padding: 9px 18px;
+        color: currentColor;
+        font-size: 15px;
+        font-family: var(--font-body);
+        font-weight: 700;
+    }
+
+    &__body {
+        border: 2px solid currentColor;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1;
+        padding: 20px;
+
+        &--title {
+            font-family: var(--font-heading);
+            font-size: 34px;
+            text-transform: uppercase;
+            letter-spacing: 4px;
+        }
+
+        &--stars {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            font-family: var(--font-body);
+            font-size: 16px;
+        }
+
+        &--desc {
+            font-family: var(--font-body);
+            font-size: 16px;
+        }
+    }
+
+
     &__img {
         width: 100%;
     }
