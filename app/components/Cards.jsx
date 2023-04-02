@@ -36,12 +36,11 @@ const Card = ({
       </p>
 
       <div className="card__inner">
-        <Link href={link}>
+        <Link href={link} className="card__img">
           <Image
             src={img}
             width={415}
             height={244}
-            className="card__img"
             alt={imgAlt ? imgAlt : title}
           />
         </Link>
@@ -53,8 +52,13 @@ const Card = ({
           }}
         >
           <Link href={link}>
-            <h2 class="card__body--title">{title}</h2>
-            <span class="sr-only">Link to Page Title</span>
+            <h2
+              className="card__body--title"
+              style={{ whiteSpace: "pre-wrap" }}
+            >
+              {title}
+            </h2>
+            <span className="sr-only">Link to Page {title}</span>
           </Link>
 
           <div className="card__body--stars">
@@ -72,17 +76,17 @@ const Card = ({
           <p className="card__body--desc" style={{ whiteSpace: "pre-wrap" }}>
             {desc}
           </p>
-
           <div className="btn__container">
             <ButtonSmall
               link={link ? link : "#"}
               text="Add to Cart"
-              btnColor="var(--color-primary)"
+              btnColor={color ? color : "var(--color-primary)"}
             />
             <ButtonSmallBorder
               buttonTag
               text="SHOP Now"
-              btnTextColor="var(--color-primary)"
+              borderColor={color ? color : "var(--color-primary)"}
+              btnTextColor={color ? color : "var(--color-primary)"}
             />
           </div>
         </div>

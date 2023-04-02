@@ -1,10 +1,20 @@
 .card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
     &__header {
         padding: 9px 18px;
         color: currentColor;
         font-size: 15px;
         font-family: var(--font-body);
         font-weight: 700;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        flex-grow: 1;
     }
 
     &__body {
@@ -17,7 +27,7 @@
 
         &--title {
             font-family: var(--font-heading);
-            font-size: 34px;
+            font-size: calc(20px + (40 - 20) * ((100vw - 320px)/ (1440 - 320)));
             text-transform: uppercase;
             letter-spacing: 4px;
         }
@@ -31,6 +41,7 @@
         }
 
         &--desc {
+            flex: 1;
             font-family: var(--font-body);
             font-size: 16px;
         }
@@ -38,6 +49,10 @@
 
 
     &__img {
-        width: 100%;
+        display: block;
+
+        img {
+            width: 100%;
+        }
     }
 }

@@ -20,6 +20,7 @@ const HomeFlavors = () => {
             headBgColor={item.headBgColor}
             img={item.img}
             link={item.link}
+            color={item.color}
           />
         ))}
       </SwiperCarousel>
