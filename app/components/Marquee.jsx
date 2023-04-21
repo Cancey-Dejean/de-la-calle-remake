@@ -1,6 +1,12 @@
 const Marquee = ({ bgColor, textColor }) => {
   return (
-    <div className="marquee">
+    <div
+      className="marquee"
+      style={{
+        backgroundColor: bgColor,
+        color: textColor,
+      }}
+    >
       <p className="marquee-item">
         It’s about celebrating all life has to offer. It’s about discovering
         authentic flavors both traditional and modern.
@@ -42,7 +48,13 @@ const Marquee = ({ bgColor, textColor }) => {
 const MarqueeBig = ({ bgColor, textColor }) => {
   return (
     <>
-      <div className="product-marquee marquee-section">
+      <div
+        className="product-marquee marquee-section"
+        style={{
+          backgroundColor: bgColor,
+          color: textColor,
+        }}
+      >
         <div className="marquee-section__list">
           <span>CERTIFIED ORGANIC</span>
 

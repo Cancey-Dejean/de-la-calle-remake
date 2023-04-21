@@ -64,23 +64,23 @@
     font-style: normal;
 }
 
-* {
-    @apply m-0 box-border scroll-smooth border border-none p-0 antialiased;
-}
 
 html,
 body {
-    @apply h-full;
+    margin: 0;
+    padding: 0;
 }
 
 body {
     display: flex;
     flex-direction: column;
     overflow-x: hidden;
-    background-color: var(--cream);
+    background-color: var(--color-cream);
     font-family: var(--font-title);
     font-size: 17px;
     line-height: 1.5;
+    height: 100vh;
+    height: 100svh;
 }
 
 audio,

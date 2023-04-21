@@ -11,7 +11,7 @@
 }
 
 .home-flavors .product-marquee:before {
-    background-color: var(--cream);
+    background-color: var(--color-cream);
     border-top: 2px solid var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
 }
@@ -104,6 +104,9 @@
 .marquee-section__list {
     animation: text-marquee 55s linear infinite;
     animation-duration: 45s;
+    border: 2px solid currentColor;
+    border-right: 0;
+    border-left: 0;
 }
 
 .marquee-section span {

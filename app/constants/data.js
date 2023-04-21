@@ -149,7 +149,35 @@ const shopFlavors = [
   },
 ]
 
+const sliderSettings = {
+  arrows: false,
+  slidesToShow: 3,
+  slidesToScroll: 3,
+  cssEase: "linear",
+  infinite: true,
+  autoplay: true,
+  autoplaySpeed: 1000,
+  swipeToSlide: true,
+  speed: 1000,
+  variableWidth: true,
+  responsive: [
+    {
+      breakpoint: 1300,
+      settings: {
+        slidesToShow: 2,
+      },
+    },
+    {
+      breakpoint: 576,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
+}
+
 export default {
   marqueeAbout,
   shopFlavors,
+  sliderSettings,
 }
